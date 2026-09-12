@@ -1,0 +1,61 @@
+month,market,product_category,us_tariff_pct,order_value_inr,order_units_index,export_margin_pct
+2025-01,US,Knitwear,18,450000,70,8.0
+2025-02,EU,Sportswear,8,457919,87,15
+2025-03,UK,Innerwear,8,465838,104,9
+2025-04,Middle East,Kidswear,8,473757,121,16
+2025-05,Other,Home Textiles,8,481676,138,10
+2025-06,US,Knitwear,33,489595,85,14.3
+2025-07,EU,Sportswear,8,497514,102,11
+2025-08,UK,Innerwear,8,505433,119,18
+2025-09,Middle East,Kidswear,8,513352,136,12
+2025-10,Other,Home Textiles,8,521271,83,19
+2025-11,US,Knitwear,23,529190,100,12.1
+2025-12,EU,Sportswear,8,537109,117,20
+2026-01,UK,Innerwear,8,545028,134,14
+2026-02,Middle East,Kidswear,8,552947,81,8
+2026-03,Other,Home Textiles,8,560866,98,15
+2026-04,US,Knitwear,38,568785,115,5.4
+2026-05,EU,Sportswear,8,576704,132,16
+2026-06,UK,Innerwear,8,584623,79,10
+2025-01,Middle East,Kidswear,8,592542,96,17
+2025-02,Other,Home Textiles,8,600461,113,11
+2025-03,US,Knitwear,28,608380,130,16.2
+2025-04,EU,Sportswear,8,616299,77,12
+2025-05,UK,Innerwear,8,624218,94,19
+2025-06,Middle East,Kidswear,8,632137,111,13
+2025-07,Other,Home Textiles,8,640056,128,20
+2025-08,US,Knitwear,18,647975,75,14
+2025-09,EU,Sportswear,8,655894,92,8
+2025-10,UK,Innerwear,8,663813,109,15
+2025-11,Middle East,Kidswear,8,671732,126,9
+2025-12,Other,Home Textiles,8,679651,73,16
+2026-01,US,Knitwear,33,687570,90,7.3
+2026-02,EU,Sportswear,8,695489,107,17
+2026-03,UK,Innerwear,8,703408,124,11
+2026-04,Middle East,Kidswear,8,711327,71,18
+2026-05,Other,Home Textiles,8,719246,88,12
+2026-06,US,Knitwear,23,727165,105,18.1
+2025-01,EU,Sportswear,8,735084,122,13
+2025-02,UK,Innerwear,8,743003,139,20
+2025-03,Middle East,Kidswear,8,750922,86,14
+2025-04,Other,Home Textiles,8,758841,103,8
+2025-05,US,Knitwear,38,766760,120,11.4
+2025-06,EU,Sportswear,8,774679,137,9
+2025-07,UK,Innerwear,8,782598,84,16
+2025-08,Middle East,Kidswear,8,790517,101,10
+2025-09,Other,Home Textiles,8,798436,118,17
+2025-10,US,Knitwear,28,806355,135,9.2
+2025-11,EU,Sportswear,8,814274,82,18
+2025-12,UK,Innerwear,8,822193,99,12
+2026-01,Middle East,Kidswear,8,830112,116,19
+2026-02,Other,Home Textiles,8,838031,133,13
+2026-03,US,Knitwear,18,845950,80,20
+2026-04,EU,Sportswear,8,853869,97,14
+2026-05,UK,Innerwear,8,861788,114,8
+2026-06,Middle East,Kidswear,8,869707,131,15
+2025-01,Other,Home Textiles,8,877626,78,9
+2025-02,US,Knitwear,33,885545,95,13.3
+2025-03,EU,Sportswear,8,893464,112,10
+2025-04,UK,Innerwear,8,901383,129,17
+2025-05,Middle East,Kidswear,8,909302,76,11
+2025-06,Other,Home Textiles,8,917221,93,18
