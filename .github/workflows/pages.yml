@@ -1,24 +1,38 @@
-name: Deploy dashboard to GitHub Pages
+name: Deploy industry dashboard
 on:
   push:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 jobs:
-  deploy:
+  build-and-deploy:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Prepare dashboard bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dashboard
+          if [ ! -f dashboard/index.html ]; then curl -fsSL https://raw.githubusercontent.com/sanjay-arlo/chennai-water-security-tanker-allocation/main/dashboard/index.html -o dashboard/index.html; fi
+          if [ ! -f dashboard/app.js ]; then curl -fsSL https://raw.githubusercontent.com/sanjay-arlo/chennai-water-security-tanker-allocation/main/dashboard/app.js -o dashboard/app.js; fi
+          csv=$(find . -maxdepth 1 -type f -name '*.csv' | head -n 1 || true)
+          if [ -z "${csv}" ]; then echo 'No root CSV dataset found' >&2; exit 1; fi
+          cp "${csv}" dashboard/data.csv
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dashboard
+          if ! git diff --cached --quiet; then git commit -m 'feat: build industry dashboard [skip ci]'; git push; fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
-        with:
-          path: '.'
+        with: {path: dashboard}
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
